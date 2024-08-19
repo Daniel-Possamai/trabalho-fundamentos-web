@@ -46,18 +46,52 @@ body{
     background-color: #222222;
 }
 
+.container-sobre{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-profile{
     width: 500px;
+    animation: mover 3s infinite alternate;
+    position: relative;
 }
 
 .img-profile img{
     width: 100%;
 }
 
+.info-sobre{
+    width: 50%;
+    color: #fff;
+}
+
+.info-sobre p{
+    font-size: 1.2rem;
+}
+
+
+
+/* Animações */
+
+@keyframes mover{
+    0%{
+        top: -20px;
+    }
+    100%{
+        top: 20px;
+    }
+}
+
 
 
 /* Responsivo Mobile */
 @media (max-width: 1024px){
-    .img-profile{}
+    .img-profile{
+        width: 300px;
+    }
 }
 
