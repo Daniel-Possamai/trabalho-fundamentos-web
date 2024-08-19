@@ -119,6 +119,25 @@ body{
 
 /* Projetos */
 
+.container-portfolio{
+    width: 100%;
+    height: 100dvh;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.container-portfolio span{
+    color: red;
+}
+
+.projetos{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section.projetos{
     padding: 40px 5%;
 }
