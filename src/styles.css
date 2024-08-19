@@ -46,6 +46,8 @@ body{
     background-color: #222222;
 }
 
+/* Sobre */
+
 .container-sobre{
     width: 100%;
     height: 100dvh;
@@ -80,6 +82,106 @@ body{
 }
 
 
+/* Formação */
+
+.container-formacao{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-formacao{
+    width: 500px;
+    position: relative;
+}
+
+.img-formacao img{
+    width: 100%;
+}
+
+.info-formacao{
+    width: 50%;
+    color: #fff;
+}
+
+.info-formacao p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.info-formacao h1 span{
+    color: red;
+}
+
+
+/* Projetos */
+
+section.projetos{
+    padding: 40px 5%;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imgProject{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 45px;
+    position: relative;
+}
+
+.imgProject:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #00000079;
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.overlay a{
+    font-size: 16px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-style: oblique;
+    transition: .3s;
+}
+
+.overlay a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
 /* Animações */
 
 @keyframes mover{
@@ -95,8 +197,21 @@ body{
 
 /* Responsivo Mobile */
 @media (max-width: 1024px){
+    /* Sobre */
     .img-profile{
         width: 300px;
+    }
+
+    /* Porfolio */
+    section.projetos{
+        padding: 40px 5%;
+    }
+
+    section.projetos .flex{
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
