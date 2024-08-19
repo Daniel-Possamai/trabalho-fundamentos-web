@@ -72,8 +72,12 @@ body{
 .info-sobre p{
     font-size: 1.2rem;
     text-align: justify;
+    margin-top: 5px;
 }
 
+.info-sobre h1 span{
+    color: red;
+}
 
 
 /* Animações */
