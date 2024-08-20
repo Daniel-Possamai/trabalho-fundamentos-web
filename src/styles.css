@@ -141,11 +141,11 @@ body{
     justify-content: center;
 }
 
-section.projetos{
+.projetos{
     padding: 40px 5%;
 }
 
-section.projetos .flex{
+.projetos .flex{
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
@@ -375,20 +375,50 @@ section.projetos .flex{
 /* Responsivo Mobile */
 @media (max-width: 1024px){
     /* Sobre */
+    .container-sobre{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .info-sobre{
+        width: 100%;
+        padding: 5px;
+    }
+
     .img-profile{
         width: 300px;
     }
 
+    /* Formação */
+    .container-formacao{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .img-formacao{
+        width: 300px;
+    }
+
+    .info-formacao{
+        width: 100%;
+        padding: 5px;
+    }
+
     /* Porfolio */
-    section.projetos{
+    .projetos{
         padding: 40px 5%;
     }
 
-    section.projetos .flex{
+    .projetos .flex{
         justify-content: space-around;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    /* Contato */
+    .form-container {
+        width: 300px;
+      }
 }
 
